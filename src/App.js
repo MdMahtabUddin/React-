@@ -27,31 +27,6 @@ function App() {
   );
 }
 
-/* 
-      <p id="title">Title</p>
-      <Friend phone="01700" address="Noakhali"></Friend>
-      <Friend phone="01899" address="Rongpur"></Friend>
-      <Friend phone="01655" address="Jessore"></Friend>
-      <Friend phone="01900" address="Dhaka"></Friend>
-
-
-*/
-
-function Person(props) {
-  console.log(props);
-  const person = {
-    backgroundColor: 'skyblue',
-    border: '3px solid lightsalmon',
-    margin: '20px',
-    borderRadius: '10px'
-  }
-  return (
-    <div style={person}>
-      <h1>Name: {props.name}</h1>
-      <h4>Hero of: {props.nayika}</h4>
-    </div >
-  );
-}
 
 function Cinema(props) {
   return (
@@ -71,18 +46,6 @@ function Friend(props) {
   );
 }
 
-/* 
 
-<Person name="Rubel" nayika="Moushumi"></Person>
-      <Person name="BappaRaz" nayika="Chekha"></Person>
-      <Person name="Koober" nayika="Kopila"></Person>
-*/
-
-/* 
-
-<Person name={nayoks[0]} nayika="Moushumi"></Person>
-      <Person name={nayoks[1]} nayika="Chekha"></Person>
-      <Person name={nayoks[2]} nayika="Kopila"></Person>
-*/
 
 export default App;
