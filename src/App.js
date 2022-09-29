@@ -28,23 +28,7 @@ function App() {
 }
 
 
-function Cinema(props) {
-  return (
-    <div className="person">
-      <h2>Nayok: {props.nayok}</h2>
-      <h4>Nayika: {props.nayika}</h4>
-    </div>
-  )
-}
 
-function Friend(props) {
-  return (
-    <div className="person">
-      <h3>Phone: {props.phone}</h3>
-      <h5>Address: {props.address}</h5>
-    </div>
-  );
-}
 
 
 
