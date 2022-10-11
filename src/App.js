@@ -1,12 +1,17 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  
+  // 45-5 (advanced) Create multiple components from an array of objects
+
+  const players=['sakib','tamim','musfiq','riyad'];
   return (
     <div className="App">
       
-      <Person></Person>
+      {
+        players.map(cricket => <Person name={cricket}></Person>)
+      }
+      
 
     </div>
   );
@@ -15,11 +20,12 @@ function App() {
 // কম্পোনেন্ট বানানো , অনেক টা html ট্যাগের মতই 
 // 45-3 Create Component, return HTML from a component
 
-function Person(){
+// যখন কোন একটা কম্পোনেন্ট মধ্যে props সেট করা হলে , সেটা অনেক টা  html এর এট্রিবিউট এর মত কাজ করবে । 
+
+function Person(props){
   return (
     <div>
-    <h1>Shakib al Hasan</h1>
-    <p>Profession: cricketer</p>
+    <h1>{props.name}</h1>
 
   </div>
   )
