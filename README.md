@@ -1,2 +1,2 @@
-component similar in look , diffrent in data .
+component similar in look ,ata .abababjd
 
